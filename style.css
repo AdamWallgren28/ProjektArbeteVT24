@@ -3,16 +3,22 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    color: aquamarine;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1 {
+    font-size: xx-large;
 }
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+h1, h2, h3, h4, h5, h6, p {
+    color: aqua;
+    font-family:'Courier New', Courier, monospace;
+}
+h2 {margin: 1rem;}
+
+
+.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
     color: white;
 }
+
 header {
     padding: 4rem;
     background: linear-gradient(to bottom, black, transparent), url("https://images.pexels.com/photos/17211520/pexels-photo-17211520/free-photo-of-crane-over-royal-national-theatre-in-london-england.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
@@ -31,146 +37,142 @@ header {
         display: flex;
         justify-content: space-between;
     }
-        .hem {
-            padding: 0rem 1rem;
-        }
+    
         .meny {
             width: 60vw;
             display: flex;
             padding: 0rem 1rem;
             justify-content: flex-end;
-
         }
-            .menyKnapp {
-                margin: 0 1rem;
+            .menyKnapp, .hem{
+                margin: 1rem;
+    
             }
         #burgerMenu, .navBox {
             display: none;
         }
         
-    @media screen and (max-width: 500px) {
-        .meny {display: none}
-        
-        #burgerMenu {
-            position: absolute;
-            right: 0;
-            z-index: 4;
-            padding: 0 1rem;
-            display: flex;
-            justify-content: flex-start;
-
-        }
-        .navBox {
-            height: 17rem;
-            display: none
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin:0;
-            border-style: solid;
-            border-width: 1px;
-            border-bottom-left-radius: 2rem;
-            background-color: grey;
-        }
-        .menyKnapp2 {
-            padding: 0 2rem;
-            
-        }
-
-        .introDiv{
-            flex-direction: column-reverse;
-        }
-            .profilBild, .picContianer {
-                border-radius: 1rem;
-                width: 72vw;
-                height: 92vw;
-            }       
-    }
-    
-    .introDiv {
-        display: flex;
-        margin: 1rem;
-        width: 65vw;
-        margin: 1rem;
-    }
-
-    .introText {
-        
-    }
-
-    .bildBox {
-        display: flex;
-        justify-content: center;
-        
-    }
-    .picContainer{
-        border-radius: 2rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        display: inline-block;
-        position: relative;
-        width: 18vw;
-        height: 23vw;
-        overflow: hidden;
-        
-    }
 
     
-.profilBild {
-        width: 18vw;
-        height: 23vw;
-        filter: grayscale(100%);
-    }
+.introDiv {
+    display: flex;
+    margin: 1rem;
+    width: 75vw;
+}
+            .introText {
+                padding-right: 2rem;
+            }
 
-    .filterBild {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%; 
-        height: 50%;
-        z-index: 1;
-        background: linear-gradient(to top, hsla(0, 0%, 100%, 0.75), transparent);
-        animation: slide 3s infinite;
-    }
-    @keyframes slide {
-        0% {top: -24vw;}
-        100% {top: 48vw;}
-    }
+            #mailaMig {
+                background-color: aqua;
+                height: 3rem;
+                border-radius: 1.5rem;
+                width: 8rem;
+                margin-top: 2rem;
+            }
+            #mailaMig:hover{background-color: white;}
+
+
+            .bildBox {
+                display: flex;
+                justify-content: center;
+        }           
+                .picContainer{
+                    border-radius: 2rem;
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                    overflow: hidden;
+                    display: inline-block;
+                    position: relative;
+                }
+
+                .profilBild, .picContainer {
+                    width: 18vw;
+                    height: 23vw;
+                    filter: grayscale(100%);
+                }
+
+                .filterBild {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 100%; 
+                    height: 50%;
+                    z-index: 1;
+                    background: linear-gradient(to top, hsla(0, 0%, 100%, 0.75), transparent);
+                    animation: slide 3s infinite;
+                }
+                @keyframes slide {
+                    0% {transform: translateY(-300%);}
+                    100% {transform: translateY(100%);}
+                }
    
-main {
-    
+main {    
     background-color: lightgrey;
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 
+.skillsBox {
+    width: 75vw;
+    margin-top: 3rem;
+}
+        .skills, .projektRubriker, .projektText {
+            color: black;
+        }
+        .kunskaper {
+            width: 75vw;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .kunskaperM {
+            display: none;
+        }
+                .kunskap {
+                    padding: 16px;
+                    border-radius: 16px;
+                    background-color: aqua;
+                }
+                        .kunskapsIkon {
+                            width: 8vw;
+                        }
+
 .projectSection {
     background-color: black;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.kunskaper, .minaProjekt {
-
-    width: 65vw;
-    border-style: solid;
-    border-color: gray;
-    border-radius: 2rem;
-    margin: 2rem 0;
-    padding: 2rem 0;
-    display: flex;
-    
-    justify-content: space-between;
-}
-
-.kunskap, .projekt {
-    margin: 2rem;
-    width: 10vw;
-    height: 10vw;
-    background-color: aqua;
-}
-
+    .projektBox {
+        width: 75vw;
+    }
+        .minaProjekt {
+            width: 75vw;
+            padding: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 1rem;
+        }
+               .projektRubrik {
+                align-self: flex-start;
+                margin-left: 12,5vw;
+               }
+                .projekt {
+                    padding: 16px;
+                    border-radius: 16px;
+                    background-color: aqua;
+                }
+                .projektRubriker{
+                    height: 4rem;
+                }
+                .projektIkon {
+                    width: 20vw;
+                }
 .contact {
     width: 65vw;
     border-style: solid;
@@ -190,4 +192,65 @@ footer {
     align-items: center;
     height: 20vh;
     background-color: black;
+}
+
+@media screen and (max-width: 750px) {
+    .meny {display: none;}
+    
+    #burgerMenu {
+        position: absolute;
+        right: 0;
+        z-index: 4;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .navBox {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin:0;
+        border-style: solid;
+        border-width: 1px;
+        border-bottom-left-radius: 2rem;
+        background-color: grey;
+    }
+    .menyKnapp2 {padding: 0 2rem;}
+
+    .introDiv{
+        flex-direction: column-reverse;
+        margin: 0 1rem 1rem 1rem;
+    }
+        .introText {padding-right: 0rem;}
+        .picContainer, .profilBild {
+            width: 37vw;
+            height: auto;
+        
+        }
+    .kunskaper {
+        display: none;
+    }
+    .kunskaperM {
+        background-color: aqua;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .minaProjekt {
+        width: 75vw;
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+            .projektRubriker{
+                height: auto;
+            }
+            .projektIkon {
+                width: 35vw;
+            }
 }
