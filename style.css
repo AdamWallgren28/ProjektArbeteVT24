@@ -108,8 +108,7 @@ header {
                 }
    
 main {    
-    background-color: lightgrey;
-    display: flex;
+    background: linear-gradient(to bottom, lightgrey, black), url("hockeyBackground.jpg");    display: flex;
     flex-direction: column;
     align-items: center;    
 }
@@ -142,6 +141,7 @@ main {
 .projectSection {
     background-color: black;
     width: 100vw;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,25 +173,56 @@ main {
                 .projektIkon {
                     width: 20vw;
                 }
-.contact {
-    width: 65vw;
-    border-style: solid;
-    border-color: gray;
-    border-radius: 2rem;
-    margin: 2rem 0;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
+                .projectLink {
 
-}
+                    font-family:Arial, Helvetica, sans-serif;
+                    font-size:medium;
+                    background-color: lightgrey;
+                    color: black;
+                    padding: 6px 12px;
+                    border-style: solid;
+                    border-color:grey black black grey;
+                    border-width: 2px;
+                    border-radius: 18px;
+                    text-decoration: none;
+                    
+                }
+                .projectLink:hover {background-color: hsl(0, 0%, 90%);}
+                .projectLink:active {
+                    color: white;
+                    border-color: black grey grey black ;
+                }
+
+
+        .contact {
+            width: 75vw;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            border-radius: 2rem;
+            margin: 8rem 2rem 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contact p {
+            margin: 2rem 2rem 1rem 2rem;
+        
+        }
+        #mailaMig {
+            align-self: flex-end;
+            margin: 0rem 2rem 6rem 2rem;
+        }
         
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    
     background-color: black;
+    padding: 1rem 12.5vw 2rem 12.5vw;
 }
 
 @media screen and (max-width: 750px) {
@@ -224,8 +255,8 @@ footer {
     }
         .introText {padding-right: 0rem;}
         .picContainer, .profilBild {
-            width: 37vw;
-            height: auto;
+            width: 36vw;
+            height: 46vw;
         
         }
     .kunskaper {
