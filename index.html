@@ -9,24 +9,24 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="script.js" defer></script>
 </head>
-<body>
+<body id="bodyRef">
     <nav>
         <div class="hem">
-            <h2 class="hem">HOME</h2>
+            <a href="#bodyRef"  class="menyKnapp">HOME</a>
         </div>
         <div class="meny">
             <div class="menyKnapp"><a href="#skillsDiv" class="menyKnapp">Skills</a></div>
-            <div class="menyKnapp"><h3 class="menyKnapp">Projects</h3></div>
-            <div class="menyKnapp"><h3 class="menyKnapp">Contact</h3></div>
+            <div class="menyKnapp"><a href="#projectDiv" class="menyKnapp">Projects</a></div>
+            <div class="menyKnapp"><a href="#contactDiv" class="menyKnapp">Contact</a></div>
         </div>
         <div id="burgerMenu"><h1 class="burgarMeny">&#9776;</h1></div>  
         <div class="navBox">
             <div><h2>Menu:</h2></div>
             <ul>
-                <div class="menyKnapp2"><h2 class="menyKnapp2">Home</h2></div>
+                <div class="menyKnapp2"><a href="#bodyRef" class="menyKnapp2">Home</a></div>
                 <div class="menyKnapp2"><a href="#skillsDiv" class="menyKnapp2">Skills</a></div>
-                <div class="menyKnapp2"><h2 class="menyKnapp2">Projects</h2></div>
-                <div class="menyKnapp2"><h2 class="menyKnapp2">Contact</h2></div>
+                <div class="menyKnapp2"><a href="#projectDiv" class="menyKnapp2">Projects</a></div>
+                <div class="menyKnapp2"><a href="#contactDiv" class="menyKnapp2">Contact</a></div>
             </ul>
         </div>
     </nav>
@@ -82,7 +82,7 @@
             <p class="skills">I'm currently studying "Fullstack Development" at Företagsuniversitetet. Im also working my way thru the curricilum at The Odin Project. So far I've ... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis optio accusantium ipsum neque consectetur placeat aspernatur veniam eius quidem sit facilis unde, natus officiis quos cupiditate eligendi ipsa! Incidunt, repellat!</p>
         </article>
     </div>
-    <section class="projectSection">
+    <section id="projectDiv" class="projectSection">
         <div class="projektBox">
             <h1 class="projektRubrik">Projects</h1>
             <article class="minaProjekt">
@@ -107,6 +107,9 @@
             </article>
         </div>
     </section>
+    <div id="contactDiv" class="rubrikBox">
+        <h1 class="projektRubrik">Contact</h1>
+    </div>
     <section class="contact">
         <p>Again, if yu are intrested in my servieces or have any questions, please feel free to reach out to me!</p>
         <br>
