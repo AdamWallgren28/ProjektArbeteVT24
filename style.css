@@ -126,7 +126,7 @@ main {
 .skillsBox {
     width: 75vw;
     padding-bottom: 4rem;
-    
+
 }
         .skillsRubrik {
             color: black;
@@ -160,7 +160,7 @@ main {
 .projectSection {
     background-color: black;
     width: 100vw;
-    padding-top: 3rem;
+    padding: 3rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -171,7 +171,7 @@ main {
     }
         .minaProjekt {
             width: 75vw;
-            padding: 2rem 0;
+            padding: 2rem 0 4rem 0;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
@@ -183,9 +183,10 @@ main {
                 margin-left: 12,5vw;
                }
                 .projekt {
-                    padding: 16px;
+                    padding: 1rem 1rem 2rem 1rem;
                     border-radius: 16px;
                     background-color: aqua;
+                    
                 }
                 .projektRubriker{
                     height: 4rem;
@@ -279,7 +280,12 @@ footer {
     nav {
         height: 5rem;
     }
-        .meny {display: none;}
+        .hem{
+            padding-top: 1rem;
+        }
+        .meny {
+            display: none;
+        }
         
         #burgerMenu {
             position: absolute;
@@ -288,9 +294,7 @@ footer {
             padding: 0 1rem;
             display: flex;
         }
-        .hem{
-            padding-top: 1rem;
-        }
+        
         .navBox {
             display: none;
             position: absolute;
@@ -302,9 +306,12 @@ footer {
             border-bottom-left-radius: 2rem;
             background-color: grey;
         }
-        .menyKnapp2 {
-            padding: 0 2rem;
-        }
+            .navBox ul a {
+                display: block;
+            }
+                .menyKnapp2 {
+                    padding: 0 2rem;
+                }
 
     .introDiv{
         flex-direction: column-reverse;
