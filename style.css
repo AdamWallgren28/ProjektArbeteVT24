@@ -8,11 +8,19 @@ body {
 h1 {
     font-size: xx-large;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, .menyKnapp, .menyKnapp2 {
+    text-decoration: none;
     color: aqua;
     font-family:'Courier New', Courier, monospace;
 }
 h2 {margin: 1rem;}
+.menyKnapp, .menyKnapp2 {
+    text-decoration: none;
+    color: aqua;
+    font-family:'Courier New', Courier, monospace;
+    margin: 1rem;
+    font-size:x-large
+}
 
 
 .hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
@@ -120,6 +128,7 @@ main {
 }
         .skills, .projektRubriker, .projektText {
             color: black;
+            margin-top: 6rem;
         }
         .kunskaper {
             width: 75vw;
