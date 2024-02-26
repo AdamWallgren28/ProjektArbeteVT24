@@ -26,12 +26,4 @@ function openMail() {
     window.location.href = "mailto:" + emailAddress;
 }
 
-// Add 'hover' class on touchstart for all hoverable elements
-$('.hoverable').on('touchstart', function() {
-    $(this).addClass('hover');
-});
 
-// Remove 'hover' class on touchend for all hoverable elements
-$('.hoverable').on('touchend', function() {
-    $(this).removeClass('hover');
-});

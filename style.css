@@ -22,9 +22,10 @@ h2 {margin: 1rem;}
     font-size:x-large
 }
 
-
-.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .hoverable:hover{
+@media screen and (min-width: 750px) { 
+.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
     color: white;
+}
 }
 
 header {
@@ -80,7 +81,14 @@ header {
                 margin-top: 2rem;
                 border-width: 3px;
             }
-            #mailaMig:hover{background-color: rgba(211, 211, 211, 0.75)}
+            @media screen and (min-width: 750px) { 
+                #mailaMig:hover{
+                    background-color: rgba(211, 211, 211, 0.75)
+                }
+            }
+            #mailaMig:active {
+                color:white;
+            }
 
 
             .bildBox {
