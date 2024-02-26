@@ -11,7 +11,7 @@ h1 {
 h1, h2, h3, h4, h5, h6, p, .menyKnapp, .menyKnapp2 {
     text-decoration: none;
     color: aqua;
-    font-family:'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif;
 }
 h2 {margin: 1rem;}
 .menyKnapp, .menyKnapp2 {
@@ -23,7 +23,7 @@ h2 {margin: 1rem;}
 }
 
 
-.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
+.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover, .hem:active, .menyKnapp:active, .menyKnapp2:active, .burgarMeny:active{
     color: white;
 }
 
@@ -187,38 +187,37 @@ main {
                 .projekt {
                     padding: 1rem 1rem 2rem 1rem;
                     border-radius: 16px;
-                    background-color: aqua;
-                    
+                    background-color: aqua; 
                 }
-                .projektRubriker{
-                    height: 4rem;
-                }
-                .projektIkon {
-                    width: 20vw;
-                }
-                .projectLink {
-
-                    font-family:Arial, Helvetica, sans-serif;
-                    font-size:medium;
-                    background-color: lightgrey;
-                    color: black;
-                    padding: 6px 12px;
-                    border-style: solid;
-                    border-color:grey black black grey;
-                    border-width: 2px;
-                    border-radius: 18px;
-                    text-decoration: none;
-                    
-                }
-                .projectLink:hover {background-color: hsl(0, 0%, 90%);}
-                .projectLink:active {
-                    color: white;
-                    border-color: black grey grey black ;
-                }
+                    .projektRubriker{
+                        height: 4rem;
+                    }
+                    .projektIkon {
+                        width: 20vw;
+                    }
+                    .projectLink {
+                        font-family:Arial, Helvetica, sans-serif;
+                        font-size:medium;
+                        background-color: lightgrey;
+                        color: black;
+                        padding: 6px 12px;
+                        border-style: solid;
+                        border-color:grey black black grey;
+                        border-width: 2px;
+                        border-radius: 18px;
+                        text-decoration: none;                    
+                    }
+                        .projectLink:hover {
+                            background-color: hsl(0, 0%, 90%);
+                        }
+                        .projectLink:active {
+                            color: white;
+                            border-color: black grey grey black ;
+                        }
 
         .rubrikBox{
             width: 75vw;
-            padding-top: 6rem;;
+            padding-top: 4rem;            
         }
         .contact {
             width: 75vw;
@@ -232,53 +231,46 @@ main {
             justify-content: center;
         }
         .contact p {
-            margin: 2rem 2rem 1rem 2rem;
-        
+            margin: 2rem 2rem 1rem 2rem;        
         }
         #mailaMig {
             align-self: flex-end;
             margin: 0rem 2rem 6rem 2rem;
-        }
-        
+        }        
 
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
     background-color: black;
     padding: 1rem 12.5vw 2rem 12.5vw;
 }
-.cvLinks {
-    display: flex;
-    justify-content: flex-start;
-    
-}
-    .cvLinks a {
-        color: black;
-        height: 2.5rem;
-        min-width: 2.5rem;
-        margin-right: 1rem;
-        background-color: aqua;
-        border-radius: 3rem;
-        border-style: solid;
-        border-radius: 1rem;
-        border-color: grey;
-        border-width: 1px;
+    .cvLinks {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        
+        justify-content: flex-start;    
     }
-        .cvLinkImg {
-            width: 2rem;
+        .cvLinks a {
+            color: black;
+            height: 2.5rem;
+            min-width: 2.5rem;
+            margin-right: 1rem;
+            background-color: aqua;
+            border-radius: 3rem;
+            border-style: solid;
+            border-radius: 1rem;
+            border-color: grey;
+            border-width: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;        
         }
+            .cvLinkImg {
+                width: 2rem;
+            }
 
 
-@media screen and (max-width: 750px) {
-    
-
+@media screen and (max-width: 750px) {    
     nav {
         height: 5rem;
     }
@@ -287,16 +279,14 @@ footer {
         }
         .meny {
             display: none;
-        }
-        
+        }        
         #burgerMenu {
             position: absolute;
             right: 0;
             z-index: 4;
             padding: 0 1rem;
             display: flex;
-        }
-        
+        }        
         .navBox {
             display: none;
             position: absolute;
@@ -319,7 +309,9 @@ footer {
         flex-direction: column-reverse;
         margin: 0 1rem 1rem 1rem;
     }
-        .introText {padding-right: 0rem;}
+        .introText {
+            padding-right: 0rem;
+        }
         .picContainer, .profilBild {
             width: 36vw;
             height: 46vw;
