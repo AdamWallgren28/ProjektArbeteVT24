@@ -23,7 +23,7 @@ h2 {margin: 1rem;}
 }
 
 
-.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover, .hem:active, .menyKnapp:active, .menyKnapp2:active, .burgarMeny:active{
+.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .hoverable:hover{
     color: white;
 }
 
