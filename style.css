@@ -1,4 +1,4 @@
-
+/* Globala variabler */
 body {
     display: flex;
     flex-direction: column;
@@ -14,29 +14,10 @@ h1, h2, h3, h4, h5, h6, p, .menyKnapp, .menyKnapp2 {
     font-family:Arial, Helvetica, sans-serif;
 }
 h2 {margin: 1rem;}
-.menyKnapp, .menyKnapp2 {
-    text-decoration: none;
-    color: aqua;
-    font-family:'Courier New', Courier, monospace;
-    margin: 1rem;
-    font-size:x-large
-}
 
-@media screen and (min-width: 750px) { 
-.hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
-    color: white;
-}
-}
 
-header {
-    padding: 4rem;
-    background: linear-gradient(to bottom, black, transparent), url("https://images.pexels.com/photos/17211520/pexels-photo-17211520/free-photo-of-crane-over-royal-national-theatre-in-london-england.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-color: darkgrey;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
+/*Menyer*/
     nav {
         position: sticky;
         padding-top: 1rem;
@@ -46,8 +27,7 @@ header {
         background-color: black;
         display: flex;
         justify-content: space-between;
-    }
-        
+    }        
         .meny {
             width: 60vw;
             display: flex;
@@ -61,18 +41,37 @@ header {
         #burgerMenu, .navBox {
             display: none;
         }
-        
-
-    
-.introDiv {
+            .menyKnapp, .menyKnapp2 {
+                text-decoration: none;
+                color: aqua;
+                font-family:'Courier New', Courier, monospace;
+                margin: 1rem;
+                font-size:x-large
+            }
+            /*Hover endast på desktop*/
+            @media screen and (min-width: 750px) { 
+                .hem:hover, .menyKnapp:hover, .menyKnapp2:hover, .burgarMeny:hover{
+                    color: white;
+                }
+            }
+            
+header {
+    padding: 4rem;
+    background: linear-gradient(to bottom, black, transparent), url("https://images.pexels.com/photos/17211520/pexels-photo-17211520/free-photo-of-crane-over-royal-national-theatre-in-london-england.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-color: darkgrey;
     display: flex;
-    margin: 1rem;
-    width: 75vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+    .introDiv {
+        display: flex;
+        margin: 1rem;
+        width: 75vw;
+    }
             .introText {
                 padding-right: 2rem;
             }
-
             #mailaMig {
                 background-color: aqua;
                 height: 3rem;
@@ -94,7 +93,7 @@ header {
             .bildBox {
                 display: flex;
                 justify-content: center;
-        }           
+            }           
                 .picContainer{
                     border-radius: 2rem;
                     margin-left: 1rem;
@@ -103,13 +102,12 @@ header {
                     display: inline-block;
                     position: relative;
                 }
-
                 .profilBild, .picContainer {
                     width: 18vw;
                     height: 23vw;
                     filter: grayscale(100%);
                 }
-
+                /*Scann-effekt*/
                 .filterBild {
                     position: absolute;
                     top: 50%;
@@ -130,12 +128,10 @@ main {
     flex-direction: column;
     align-items: center;    
 }
-
-.skillsBox {
-    width: 75vw;
-    padding-bottom: 4rem;
-
-}
+    .skillsBox {
+        width: 75vw;
+        padding-bottom: 4rem;
+    }
         .skillsRubrik {
             color: black;
             margin-top: 8rem;            
@@ -154,44 +150,45 @@ main {
             display: flex;
             justify-content: space-between;
         }
+        /*mobilanpassning=nydisplay(se igen nedan)*/
         .kunskaperM {
             display: none;
         }
-                .kunskap {
-                    padding: 16px;
-                    border-radius: 16px;
-                    background-color: aqua;
-                    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+            .kunskap {
+                padding: 16px;
+                border-radius: 16px;
+                background-color: aqua;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+            }
+                .kunskapsIkon {
+                    width: 8vw;
                 }
-                        .kunskapsIkon {
-                            width: 8vw;
-                        }
 
-.projectSection {
-    background-color: black;
-    width: 100vw;
-    padding: 3rem 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    .projektBox {
-        width: 75vw;
+    .projectSection {
+        background-color: black;
+        width: 100vw;
+        padding: 3rem 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-        .minaProjekt {
+        .projektBox {
             width: 75vw;
-            padding: 2rem 0 4rem 0;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-            gap: 1rem;
         }
-               .projektRubrik {
+            .projektRubrik {
                 align-self: flex-start;
                 padding-top: 2rem;
                 margin-left: 12,5vw;
-               }
+            }
+            .minaProjekt {
+                width: 75vw;
+                padding: 2rem 0 4rem 0;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                gap: 1rem;
+            }
                 .projekt {
                     padding: 1rem 1rem 2rem 1rem;
                     border-radius: 16px;
@@ -223,21 +220,21 @@ main {
                             border-color: black grey grey black ;
                         }
 
-        .rubrikBox{
-            width: 75vw;
-            padding-top: 4rem;            
-        }
-        .contact {
-            width: 75vw;
-            border-style: solid;
-            border-width: 1px;
-            border-color: black;
-            border-radius: 2rem;
-            margin: 2rem 2rem 1rem 2rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+    .rubrikBox{
+        width: 75vw;
+        padding-top: 4rem;            
+    }
+    .contact {
+        width: 75vw;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        border-radius: 2rem;
+        margin: 2rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
         .contact p {
             margin: 2rem 1rem 2rem 1rem;
             align-self: flex-start;
