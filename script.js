@@ -7,6 +7,7 @@ let hemKnapp = document.getElementById('hemKnapp');
 let skillsKnapp = document.getElementById('skillsKnapp');
 let projectsKnapp = document.getElementById('projectsKnapp');
 let contactKnapp = document.getElementById('contactKnapp');
+// samlar knappar
 let elements = [burgerMenu, hemKnapp, skillsKnapp, projectsKnapp, contactKnapp];
 
 function showHide() {
@@ -19,7 +20,7 @@ function showHide() {
         
     }
 }
-
+// ittererar över samlade knappar
 elements.forEach(element => {
     element.addEventListener('click', showHide);
 });
