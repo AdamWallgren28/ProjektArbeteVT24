@@ -239,11 +239,12 @@ main {
             justify-content: center;
         }
         .contact p {
-            margin: 2rem 2rem 1rem 2rem;        
+            margin: 2rem 1rem 2rem 1rem;
+            align-self: flex-start;
         }
         #mailaMig {
-            align-self: flex-end;
-            margin: 0rem 2rem 6rem 2rem;
+            align-self: flex-start;
+            margin: 0rem 2rem 6rem 1rem;
         }        
 
 footer {
